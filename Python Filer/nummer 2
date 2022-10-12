@@ -1,0 +1,10 @@
+run = True
+num = random.randint(1, 10) #numrene den vælger imellem
+while run:
+    user_input = int(input('gæt et nummer mellem 1 og 10: '))
+    if user_input == (num): #hvis inputtet er det rigtige nummer, så vinder man
+        print('Tillyke du vandt!')
+        run = False
+    else:
+        print('forkert, prøv igen')
+        continue # hvis du gætter forkert, så fortsætter den indtil, at du gætter rigtigt
